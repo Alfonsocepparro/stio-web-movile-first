@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/************HTML******************/
+html{
+    background-color: black;
+}
+body{
+    height: 100vh;
+}
+header{
+    background-color: #D83636;
+    color: black;
+    display: flex;
+    width: 100%;
+    height: 4.6875rem;
+    justify-content: space-between;
+    grid-area: header;
+}
+header nav{
+    justify-self: end;
+    margin: .3rem .625rem 0rem 0px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header nav ul a{
+    gap: 1.3rem;
+    margin-right: .3125rem;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.8rem;
+    color: black;
+}
+
+footer{
+    background-color: #D83636;
+    color: black;
+    display: flex;
+    height: 4.5rem;
+    width: 100%;
+    grid-area: footer;
+}
+footer div p{
+    font-size: 1.3rem;
+}
+.divLogos{
+    display: flex;
+    justify-items: end;
+    gap: .1875rem;
+    align-items: center;
+}
+/************HTML*****************/
+
+/**************INDEX*******************/
+.mainIndex{
+    display: flex; flex-direction: column;
+}
+.tituloRolling{
+    margin-top: .875rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+.parrafitoIndex{
+    color: white;
+    padding: .5rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.parr1{
+    margin-bottom: 0,5rem;
+}
+.parr2{
+    margin-top: 0.5rem;
+}
+/**************INDEX*******************/
+
+/*********DISCOGRAFIA************/
+.main-discografia{
+    color: white;
+    display: flex; flex-direction: column;
+}
+.nuevo-album{
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: underline solid darkslategrey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem
+}
+main section div img{
+    width: 300px;
+    margin: 5px 10px 5px 10px;
+}
+.imagen-hackney{
+    border-radius: 50%;
+}
+.titulo-album{
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: underline double darkslategray;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    text-indent: 15px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.separadorDiscografia{
+    background-color: darkslategray;
+    padding: 7px;
+    text-align: center;
+    margin-top: 9px;
+    font-family: 'Archivo', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    width: 100%;
+}
+main section div article{
+    padding: 10px;
+    font-size: 1.4rem;
+    font-family: 'Archivo', sans-serif;
+}
+.card-Disco{
+    border-top: dotted darkslategray;
+    border-bottom: dotted darkslategray;
+}
+
+/******DISCOGRAFIA*************/
+/******GALERIA ******/
+.grid-container-galeria{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 20% 1fr 20%;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+.main-galeria{
+    grid-area: main;
+
+}
+
+/******GALERIA ******/
+
+/*********INGRESAR**********/
+.main-ingresar div h1{
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: underline #D83636;
+    margin: 2rem 2rem 0rem 2rem;
+    font-size: 2rem;
+
+}
+.formulario{
+    margin: 2rem;
+    text-indent: 1rem;
+    border: none;
+}
+.formulario label{
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: flex;
+    text-decoration: underline #D83636;
+
+}
+.formulario input{
+    width: 95%;
+    height: 3rem;
+    margin: 0.5rem 1rem 1rem 1rem;
+}
+/********INGRESAR*************/
+
+/********MIEMBROS*********/
+.grid-container-miembros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 72px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer-miembros";
+}
+.main-miembros{
+    grid-area: main;
+    margin-bottom: 40px;
+}
+.footer-miembros{
+    grid-area: footer-miembros;
+}
+.miembrosActivos{
+    color: #D83636;
+    background-color: black;
+    text-align: left;
+    font-size: 2rem;
+    text-decoration: underline none;
+    font-family: 'Bebas Neue', sans-serif;
+    text-indent: 2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: .625rem;
+    border-bottom: dotted .125rem #D83636;
+    border-top: dotted .125rem #D83636;
+    padding: .5rem;
+}
+
+.cards{
+    width: 100%;
+    height: 480px;
+    margin-bottom: 200px;
+    display: flex; flex-direction: column;
+    background-color: black;
+    flex-wrap: wrap;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: 
+    "cardscard-M"
+    "cardscard-K"
+    "cardscard-R"
+    "cardscard-S";
+}
+.cards div{
+    width: 20rem;
+    height: 25rem;
+    margin: .4375rem;
+    border: .1875rem solid #D83636 ;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.cards div img{
+    width: 100%;
+    height: 70%;
+    margin: 0;
+}
+.cards div h2{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: .625rem;
+}
+.cards div p{
+    padding: .625rem;
+}
+.cards div p a{
+    padding-left: .625rem;
+}
+.cardscard-M{
+    background-color: lightblue;
+    grid-area: cardscard-M;
+}
+.cardscard-K{
+    grid-area: cardscard-K;
+    background-color: lightcoral;
+}
+.cardscard-R{
+    background-color: lightgreen;
+    grid-area: cardscard-R;
+}
+.cardscard-S{
+    background-color: lightpink;
+    grid-area: cardscard-S;
+}
+
+/********MIEMBROS*********/
+
+@media (min-width: 425px){
+    footer{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        font-size: 18px;
+        gap: 8px;
+        margin-top: 500px;
+    }
+    main section div img{
+        margin-left: 70px;
+    }
+    .main-ingresar div h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 699px){
+    .navbar{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 700px){
+    header{
+        display: flex; flex-direction: row;
+    }
+    .navbar{
+        display: block;
+    }
+    .menu-burger{
+        display: none;
+    }
+    .tituloRolling{
+        width: 600px;
+        height: 194px;
+        margin: .875rem 0px 0px 0px;
+        align-self: center;
+    }
+    
+    main section div img{
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .titulo-album{
+        font-size: 2rem;
+    }
+    main section div article{
+        font-size: 1.7rem;
+    }
+    .separadorDiscografia{
+        font-size: 2rem;
+    }
+    .main-ingresar div h1{
+        font-size: 3.5rem;
+    }
+    footer div p{
+        font-size: 1.5rem;
+    }
+    .cards{
+        justify-items:auto;
+    }
+}
+
+@media (min-width: 1000px){
+    header{
+        height: 100px;
+    }
+    header div img{
+        height: 100px;
+    }
+    .mainIndex{
+        flex-direction: row;
+        align-items: center;
+    }
+    .tituloRolling{
+        width: 600px;
+        height: 194px;
+    }
+    main section div{
+        display: flex; flex-direction: column;
+        justify-content: left;
+    }
+    .main-discografia{
+        width: 100%;
+    }
+    .separadorDiscografia{
+        display: block;
+        font-size: 2.7rem;
+    }
+    main section div img{
+        margin: 0;
+        width: 400px;
+        height: 400px;
+        align-self: center;
+    }
+}
+@media (min-width: 1250px){
+    .parrafitoIndex{
+        font-size: 1.75rem;
+    }
+}
