@@ -194,6 +194,7 @@ main section div article{
 }
 .footer-miembros{
     grid-area: footer-miembros;
+    margin-top: 1000px;
 }
 .miembrosActivos{
     color: #D83636;
@@ -270,6 +271,12 @@ main section div article{
 }
 
 /********MIEMBROS*********/
+/********BOOTSTRAP**************/
+.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
 
 @media (min-width: 425px){
     footer{
@@ -278,7 +285,7 @@ main section div article{
         padding: 10px;
         font-size: 18px;
         gap: 8px;
-        margin-top: 500px;
+        margin-top: 150px;
     }
     main section div img{
         margin-left: 70px;
@@ -292,7 +299,6 @@ main section div article{
         display: none;
     }
 }
-
 
 @media screen and (min-width: 700px){
     header{
@@ -332,6 +338,15 @@ main section div article{
     }
     .cards{
         justify-items:auto;
+        grid-template-columns: 4fr;
+        grid-template-rows: 2fr;
+        grid-template-areas: 
+        "cardscard-M cardscard-M cardscard-K cardscard-K"
+        "cardscard-R cardscard-R cardscard-S cardscard-S";
+        gap: 50px;
+    }
+    .footer-miembros{
+        margin-top: 300px;
     }
 }
 
@@ -367,9 +382,24 @@ main section div article{
         height: 400px;
         align-self: center;
     }
+    .cards{
+    grid-template-columns: 3fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: 
+    "cardscard-M cardscard-K cardscard-R"
+    "cardscard-S . .";
+    gap: 20px;
+    }
 }
 @media (min-width: 1250px){
     .parrafitoIndex{
         font-size: 1.75rem;
+    }
+    .cards{
+    grid-template-columns: 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "cardscard-M cardscard-K cardscard-R cardscard-S";
+    gap: 0px; 
     }
 }
